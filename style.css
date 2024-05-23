@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Mona-Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Mona-Sans"), url("font/Mona-Sans.woff") format("woff");
+}
+@font-face {
+  font-family: "Mona-Sans-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Mona-Sans-Bold"), url("font/Mona-Sans-Bold.woff") format("woff");
+}
+body {
+  background-color: #fefeff;
+  font-family: "Mona-Sans", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  margin: 4em 3em;
+  background-color: #f7f4f7;
+  width: auto;
+  height: 250px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-image: url(assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.head {
+  text-align: center;
+  padding-top: 2em;
+  height: 20%;
+  color: #f7f4f7;
+}
+h2 {
+  font-family: "Mona-Sans-Bold";
+  font-size: 1.8em;
+  color: #fff;
+  margin-bottom: -10px;
+}
+
+.container-search {
+  width: auto;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+#search {
+  width: 80%;
+  height: 50px;
+  background-color: #fefeff;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#search img {
+  width: 30px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+#result-tv {
+  margin: 4em 3em;
+  background-color: #f7f4f7;
+  width: auto;
+  height: auto;
+  border: 1px solid transparent;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.container-tv {
+  background-color: #fff;
+  box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.result-img-tv {
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.judul-tv{
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin: 1em 1em;
+  }
+  #result-tv {
+    margin: 2em 1em;
+    justify-content: center;
+    padding: 0;
+  }
+  .container-tv {
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+  }
+}
