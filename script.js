@@ -53,7 +53,7 @@ $(document).ready(function () {
     };
 
     try {
-      const res = await axios.get("http://api.tvmaze.com/search/shows", config);
+      const res = await axios.get("https://api.tvmaze.com/search/shows", config);
       getImages(res.data);
     } catch (error) {
       console.error("Error fetching data:", error);
